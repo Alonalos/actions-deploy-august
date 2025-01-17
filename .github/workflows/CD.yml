@@ -32,3 +32,7 @@ jobs:
     - name: Get GKE credentials
       run: gcloud container clusters get-credentials cluster-1 --region us-central1 --project jenkins-447419
       #on GKE go to Kubernetes Engine page and copy the command from connect 
+
+    - name: Deploy to GKE
+      run: helm install flask ./flask
+      #path to values.yml
