@@ -10,4 +10,4 @@ spec:
       port: 80
       targetPort: 5000
       #target port is the one the application is using (=containerPort)
-   type: {{ .Values.type }}   
+  type: {{ .Values.type }}   
