@@ -34,5 +34,5 @@ jobs:
       #on GKE go to Kubernetes Engine page and copy the command from connect 
 
     - name: Deploy to GKE
-      run: helm upgrade --install flask ./flask --set tag=2.0.0
+      run: helm upgrade --install flask ./flask --set tag=3.0.0
       #./flask->path to values.yml
